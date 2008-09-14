@@ -1,0 +1,8 @@
+include setup.py
+include MANIFEST.in
+include LICENSE
+include data/footer.htm
+include data/header.htm
+include data/rss.css
+include data/config
+include doc/kirss.1

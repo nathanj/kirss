@@ -1,0 +1,37 @@
+# Example of a channel:
+#
+# Slashdot (http://slashdot.org/) 15 120 half
+#     http://rss.slashdot.org/Slashdot/slashdot
+#
+# The url in parentheses is where clicking the name of the channel will go.
+# 15 means display up to 15 items for this channel.
+# 120 means wait 120 minutes before downloading the feed again.
+# half means that this channel will only display on half of the page width
+#
+# By default, only the title of the rss item is displayed. To display the
+# description as well, add ! in front of the rss url. Example:
+#
+#     ! http://rss.slashdot.org/Slashdot/slashdot
+
+Slashdot (http://slashdot.org/) 15 120 half
+	http://rss.slashdot.org/Slashdot/slashdot
+Reddit (http://reddit.com/r/programming/) 15 120 half
+	http://reddit.com/r/programming/.rss
+Digg (http://www.digg.com/) 15 120 half
+	http://www.digg.com/rss/containertechnology.xml
+Misc () 15 120 half
+	[ch] http://feeds.feedburner.com/codinghorror/
+	[bch] http://blogging-harmful.blogspot.com/feeds/posts/default?alt=rss
+	[glass] http://feeds.feedburner.com/ThatGuyWithTheGlasses
+	[art] http://artofmanliness.com/feed/
+	[opera] http://my.opera.com/desktopteam/xml/rss/blog/
+	[stack] http://blog.stackoverflow.com/feed/
+	[m3] http://mother3.fobby.net/feed/
+	[be] http://betterexplained.com/feed/
+	[mi] http://www.michaelsinsight.com/rss.xml
+	[tsd] http://feeds.feedburner.com/thesimpledollar
+	[grs] http://www.getrichslowly.org/blog/feed/
+Dilbert (http://www.dilbert.com/) 1 1000 full
+	! http://feeds.feedburner.com/DilbertDailyStrip
+Penny Arcade (http://www.penny-arcade.com/) 1 1000 full
+	! http://www.baravalle.it/phpGrabComics/phpgrabcomics.xml?comic_array[]=pennyarcade&from_real_site=True

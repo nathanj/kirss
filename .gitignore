@@ -1,0 +1,8 @@
+*~
+*.bak
+*.swp
+*.pyc
+dist/
+page/
+tags
+MANIFEST

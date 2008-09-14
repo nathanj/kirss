@@ -1,0 +1,83 @@
+body
+{
+	background-color: #f6f6f6;
+}
+
+a:link
+{
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #aa0099;
+	text-decoration: underline;
+}
+
+a:visited
+{
+	text-decoration: none;
+}
+
+a:active
+{
+	text-decoration: none;
+}
+
+.rss_item span
+{
+	color: #111;
+}
+
+.rss_channel
+{
+	padding-bottom: 15px;
+}
+
+.c1
+{
+	float: left;
+	clear: both;
+	width: 50%;
+	overflow: hidden;
+}
+
+.c2
+{
+	float: right;
+	width: 50%;
+	overflow: hidden;
+}
+
+.cfull
+{
+	width: 100%;
+	clear: both;
+}
+
+.rss_title
+{
+	font-family: tahoma, sans-serif;
+	font-size: 1.5em;
+	padding: 0px 0px 3px 0px;
+}
+
+.rss_item
+{
+	padding: 0px 0px 0px 30px;
+	text-indent: -20px;
+}
+
+.rss_body
+{
+	padding: 0px 0px 1px 20px;
+}
+
+/*
+.rss_body:first-letter
+{
+	font-size: x-large;
+	font-weight: bold;
+}
+*/
+

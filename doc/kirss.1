@@ -1,0 +1,44 @@
+.TH "kirss" "1" "September 2008" "" ""
+.SH "NAME"
+kirss \- A very simple RSS aggregator.
+.SH "SYNOPSIS"
+.B kirss
+[options]
+.SH "DESCRIPTION"
+kirss is a very simple RSS aggregator that outputs a HTML file in your
+$HOME/.kirss directory. To use, run kirss and then point your browser to
+file:///$HOME/.kirss/rss.htm .
+
+All configuration is stored in $HOME/.kirss/config .
+
+kirss will only attempt to download a feed if it is older than the
+amount specified in $HOME/.kirss/config .
+.SH "OPTIONS"
+.TP
+.B \-h, \-\-help
+Display help.
+.TP
+.B \-d, \-\-nodownload
+Do not download any feeds, just parse and generate the output.
+.TP
+.B \-q, \-\-quiet
+Do not output anything to stdout.
+.TP
+.B \-t TIMEOUT, \-\-timeout=TIMEOUT
+Sets the timeout length when downloading feeds. (default 15)
+.TP
+.B \-v, \-\-version
+Display version.
+.SH "EXAMPLE USAGE"
+The easiest way to use kirss is to create a crontab entry to run kirss
+every so often:
+
+   5 * * * * /usr/bin/python /usr/bin/kirss.py -q
+
+It can also be useful to execute kirss in your $HOME/.xinitrc.
+.SH "BUGS"
+Report bugs to nathanj@insightbb.com
+.SH AUTHORS
+.nf
+Nathan Jones <nathanj@insightbb.com>
+.fi
