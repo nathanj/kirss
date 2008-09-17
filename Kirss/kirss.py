@@ -26,7 +26,8 @@ KIRSS_DIR = os.path.expanduser('~%s.kirss%s' % (sep, sep))
 CHANNEL_FILE = '%sconfig' % KIRSS_DIR
 DATA_DIR = '%sdata%s' % (KIRSS_DIR, sep)
 MAIN_DATA_DIRS = [os.path.dirname(os.path.abspath(argv[0])) + '%sdata' % sep,
-        '%susr%sshare%skirss%sdata' % (sep, sep, sep, sep)]
+        '%susr%sshare%skirss%sdata' % (sep, sep, sep, sep),
+        '%susr%slocal%sshare%skirss%sdata' % (sep, sep, sep, sep, sep)]
 
 def local_filename(url):
     return md5(url).hexdigest()
