@@ -156,7 +156,7 @@ class Kirss:
                 if not self.quiet:
                     print 'WARNING: Could not parse %s' % filename
 
-        if (len(channel['feeds'])) > 0:
+        if (len(channel['feeds'])) > 1:
             self.feed.sort_by_date()
 
     def make_header(self, f):
