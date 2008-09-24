@@ -33,6 +33,11 @@ Run kirss.py to create the output HTML file (~/.kirss/rss.htm). You can
 then view the file in any web browser. Edit ~/.kirss/config to add or remove
 feeds.
 
+Once the config file is set up, the easiest way to keep the feeds up to date
+is by adding a cron job.
+
+    5 * * * * /usr/bin/python /usr/bin/kirss.py -q
+
 Features
 --------
 - Allows turning off the description, good for conserving space if
