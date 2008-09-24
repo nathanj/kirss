@@ -1,5 +1,6 @@
 include setup.py
 include MANIFEST.in
+include README.md
 include LICENSE
 include data/footer.htm
 include data/header.htm
