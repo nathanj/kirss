@@ -19,7 +19,7 @@ from optparse import OptionParser
 from Kirss.rss_handler import RSSHandler
 from Kirss.channel_handler import ChannelHandler, InvalidChannelException
 
-VERSION='0.8'
+VERSION='0.8.1'
 
 #KIRSS_DIR = '.%s' % os.path.sep
 KIRSS_DIR = os.path.expanduser('~%s.kirss%s' % (sep, sep))
