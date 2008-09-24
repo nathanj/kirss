@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 
 from distutils.core import setup
+from Kirss.kirss import VERSION
 
 setup(name="kirss",
-        version="0.8",
+        version=VERSION,
         license="BSD",
-        description="A very simple RSS aggregator.",
-        long_description="A very simple RSS aggregator that outputs a HTML file.",
+        description="A simple RSS aggregator.",
+        long_description="A simple RSS aggregator that outputs a HTML file.",
         author="Nathan Jones",
         author_email="nathanj@insightbb.com",
         url="http://home.insightbb.com/~nathanj/kirss/",

@@ -1,5 +1,5 @@
-KIRSS 0.8
-=========
+KIRSS - A simple RSS aggregator
+===============================
 
 Description
 -----------
@@ -13,7 +13,7 @@ determine if kirss is right for you.
 Download
 --------
 The latest release can be downloaded
-[here](http://home.insightbb.com/~nathanj/kirss/kirss-0.8.tar.gz).
+[here](http://home.insightbb.com/~nathanj/kirss/kirss-0.8.1.tar.gz).
 
 The latest code can be retrieved via git.
 
