@@ -71,7 +71,10 @@ class RSSHandler:
         try:
             pubdate = item.getElementsByTagName('pubDate')[0].firstChild.data
         except Exception, ex:
-            pubdate = ''
+            try:
+                pubdate = item.getElementsByTagName('dc:date')[0].firstChild.data
+            except Exception, ex:
+                pubdate = ''
 
         pubdate = self.parse_date(pubdate)
 
@@ -94,12 +97,11 @@ class RSSHandler:
 
         for form in formats:
             try:
-                return time.mktime(time.strptime(date, form))
+                return time.mktime(time.strptime(date[:10], form))
             except:
                 pass
 
-        # all else fails, return now
-        return time.time()
+        return 0
 
     def sort_by_date(self):
         self.items.sort(cmp=lambda x, y: cmp(x['pubdate'], y['pubdate']),
