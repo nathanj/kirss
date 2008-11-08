@@ -13,7 +13,7 @@ from StringIO import StringIO
 from gzip import GzipFile
 from os.path import sep
 from cgi import escape
-from md5 import md5
+from hashlib import md5
 from optparse import OptionParser
 
 from Kirss.rss_handler import RSSHandler
